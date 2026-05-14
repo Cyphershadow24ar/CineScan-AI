@@ -1,0 +1,7 @@
+streamlit
+torch
+transformers
+lancedb
+pyarrow
+opencv-python-headless
+Pillow
