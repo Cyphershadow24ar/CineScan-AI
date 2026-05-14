@@ -14,7 +14,7 @@ class VideoProcessor:
     to prevent RAM spikes when processing long videos (e.g., 30+ minutes).
     """
 
-    def __init__(self, target_fps: int = 1):
+    def __init__(self, target_fps: float = 0.2):
         """
         Initializes the VideoProcessor.
         

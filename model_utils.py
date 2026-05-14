@@ -32,10 +32,11 @@ class ModelProcessor:
         
         logger.info("Model loaded successfully.")
 
+    # TO THIS:
     def generate_embeddings(
         self, 
         frames_iterator: typing.Iterator[typing.Tuple[float, Image.Image]], 
-        batch_size: int = 32
+        batch_size: int = 4 # Use a small batch size to keep RAM usage low
     ) -> typing.Iterator[typing.Tuple[float, typing.List[float]]]:
         """
         Generates visual embeddings for a continuous stream of frames in batches.
